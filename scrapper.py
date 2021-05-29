@@ -95,9 +95,7 @@ def check_goodsmile():
             pic = 'https:' + pic_container.find('a', attrs={'class':'imagebox'}).get('href')
             data['image'] = pic
 
-            # print(data)
-
-            requests.post('http://localhost:3001/api/goodsmile/update', json=data)
+            requests.post('https://api.coolkidbot.com/api/goodsmile/update', json=data)
         except (AttributeError, IndexError, KeyError):
             print('Error')
 
