@@ -21,7 +21,7 @@ def set_interval(func, sec):
 def check_goodsmile():
     names = []
     with open('./data/last.txt', 'r') as reader:
-        last = reader.readline()
+        last = reader.readline().strip()
 
     URL = "https://www.goodsmile.info/en/products/announced/2021"
     page = requests.get(URL)
