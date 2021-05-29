@@ -1,12 +1,3 @@
-# from selenium import webdriver
-
-# driver_path = "./driver/chromedriver.exe"
-# driver = webdriver.Chrome(executable_path='C:\Users\\arnav\Workspaces\coolkidbot\goodsmile\driver\chromedriver.exe')
-# driver.get('https://www.google.com')
-
-# print(driver.title)
-# print(driver)
-
 import requests
 from bs4 import BeautifulSoup
 import bs4
