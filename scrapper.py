@@ -95,14 +95,14 @@ def check_goodsmile():
             pic = 'https:' + pic_container.find('a', attrs={'class':'imagebox'}).get('href')
             data['image'] = pic
 
-            # requests.post('https://api.coolkidbot.com/api/goodsmile/update', json=data)
+            requests.post('https://api.coolkidbot.com/api/goodsmile/update', json=data)
         except (AttributeError, IndexError, KeyError, ValueError):
             print('Error')
 
     with open('./data/last.txt', 'w') as reader:
         reader.write(names.pop(0))
 
-check_goodsmile()
-# set_interval(check_goodsmile, 10)
+# check_goodsmile()
+set_interval(check_goodsmile, 10)
 
 
